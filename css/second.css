@@ -1,0 +1,66 @@
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+p {
+    position: absolute;
+    size: 25px;
+    font-family: Sofia;
+    color: aqua;
+    height: 25px;
+    top: calc(2vh);
+}
+p a {
+    text-decoration: none;
+    color: #aaa;
+}
+span {
+    font-size: 11px;
+}
+p > a:first-of-type {
+    font-size: 25px;
+}
+body {
+    overflow: hidden;
+}
+
+.offset {
+    box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+.offset:hover, .offset:focus {
+    box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+
+.offset {
+    --color: #19bc8b;
+    --hover: #1973bc;
+}
+
+button {
+    color: var(--color);
+    transition: 0.25s;
+}
+button:hover, button:focus {
+    border-color: var(--hover);
+    color: black;
+    border-radius: 20px;
+}
+
+button {
+    background: black;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    padding: 1em 2em;
+
+    font-family: Aclonica;
+    margin-bottom: 8%;
+
+    position: absolute;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    justify-content: center;
+    top: calc(100vh - 10vh);
+}
